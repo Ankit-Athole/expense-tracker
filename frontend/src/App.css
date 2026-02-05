@@ -1,0 +1,122 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;   /* 👈 center horizontally */
+  align-items: flex-start;   /* 👈 start from top */
+  background-color: #f5f7fb;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* 👈 center app */
+}
+
+
+
+body {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background-color: #f5f7fb;
+  margin: 0;
+}
+
+/* Main container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;              /* 👈 centers horizontally */
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+form input {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+button {
+  align-self: center;             /* 👈 center button */
+  padding: 10px 24px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Filter */
+.filter {
+  display: flex;
+  justify-content: center;        /* 👈 center filter */
+  margin: 20px 0;
+}
+
+.filter input {
+  width: 260px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+/* Total */
+.total {
+  text-align: center;             /* 👈 center total */
+  font-size: 18px;
+  font-weight: 600;
+  color: #16a34a;
+  margin-bottom: 20px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f1f5f9;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Error */
+.error {
+  text-align: center;
+  color: #dc2626;
+  margin: 10px 0;
+}
